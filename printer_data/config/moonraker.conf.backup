@@ -124,12 +124,3 @@ restart_klipper_when_powered: True
 restart_delay: 1
 address: office-4ch.local.xyleth.co.uk
 output_id: 1
-# Crowsnest update_manager entry
-[update_manager crowsnest]
-type: git_repo
-path: ~/crowsnest
-origin: https://github.com/mainsail-crew/crowsnest.git
-managed_services: crowsnest
-install_script: tools/pkglist.sh
-
-[include moonraker-obico-update.cfg]
